@@ -1,0 +1,53 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace; /* Fonte de máquina de escrever */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('./img/3.jpg'); /* Link de exemplo para a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Estilo do livro */
+.book {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    perspective: 1500px; /* Define a perspectiva 3D */
+}
+
+/* Estilo das páginas */
+.page {
+    width: 600px;
+    height: 2050px;
+    background-color: #fffdf2; /* Cor de papel envelhecido */
+    border: 1px solid #ccc; /* Borda leve */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left center; /* Origem de transformação para virar página */
+    transition: transform 1s ease; /* Transição suave */
+    backface-visibility: hidden; /* Oculta a parte de trás */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Estilo do conteúdo das páginas */
+.content {
+    padding: 40px;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
